@@ -161,7 +161,7 @@
     " Python {
         if count(g:ITM_VIM_plugin_groups, 'python')
             " Pick either python-mode or pyflakes & pydoc
-            Plug 'python-mode/python-mode'
+            Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
             Plug 'vim-scripts/indentpython.vim'
             Plug 'sansyrox/vim-python-virtualenv'
             Plug 'mgedmin/python-imports.vim'
