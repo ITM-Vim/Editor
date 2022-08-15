@@ -1,16 +1,10 @@
 " Plugs {
-
     " Deps {
-        Plug 'gmarik/vundle'
-        Plug 'MarcWeber/vim-addon-mw-utils'
-        Plug 'tomtom/tlib_vim'
+        Plug 'mileszs/ack.vim'
         if executable('ag')
-            Plug 'mileszs/ack.vim'
             let g:ackprg = 'ag --nogroup --nocolor --column --smart-case'
         elseif executable('ack-grep')
             let g:ackprg="ack-grep -H --nocolor --nogroup --column"
-            Plug 'mileszs/ack.vim'
-        elseif executable('ack')
             Plug 'mileszs/ack.vim'
         endif
     " }
@@ -29,9 +23,10 @@
 
     " General {
         if count(g:ITM_VIM_plugin_groups, 'general')
-
+            Plug 'tyru/open-browser.vim'
             Plug 'mhartington/oceanic-next'
             Plug 'tmhedberg/SimpylFold'
+            " Plug 'Konfekt/FastFold'
             Plug 'scrooloose/nerdtree'
             Plug 'altercation/vim-colors-solarized'
             Plug 'ITM-Vim/vim-snippets'
@@ -41,8 +36,17 @@
             Plug 'rhysd/conflict-marker.vim'
             Plug 'jiangmiao/auto-pairs'
             Plug 'alvan/vim-closetag'
-            Plug 'ctrlpvim/ctrlp.vim'
-            Plug 'tacahiroy/ctrlp-funky'
+            Plug 'ackyshake/VimCompletesMe'
+
+            "Plug 'nvim-lua/plenary.nvim'
+            Plug 'folke/todo-comments.nvim'
+
+
+            " Ctrlp{
+                Plug 'ctrlpvim/ctrlp.vim'
+                Plug 'tacahiroy/ctrlp-funky'
+            "}
+
             Plug 'terryma/vim-multiple-cursors'
             Plug 'vim-scripts/sessionman.vim'
             Plug 'vim-scripts/matchit.zip'
@@ -110,7 +114,7 @@
             Plug 'godlygeek/tabular'
             Plug 'luochen1990/rainbow'
             Plug 'Yggdroot/indentLine'
-            "Plug 'ryanoasis/nerd-fonts'
+            Plug 'ryanoasis/nerd-fonts'
             Plug 'airblade/vim-gitgutter'
             Plug 'osyo-manga/vim-over'
 
@@ -145,7 +149,6 @@
         if count(g:ITM_VIM_plugin_groups, 'php')
             Plug 'ITM_VIM/PIV'
             Plug 'beyondwords/vim-twig'
-            Plug 'tyru/open-browser.vim'
             Plug 'dsawardekar/wordpress.vim'
             Plug 'shawncplus/phpcomplete.vim'
             Plug 'arnaud-lb/vim-php-namespace'
@@ -268,6 +271,5 @@
     " }
 
     endif
-
 " }
 

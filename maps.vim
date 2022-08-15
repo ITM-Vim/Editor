@@ -1,3 +1,20 @@
+" Key mapping refers to creating a shortcut for repeating a sequence of keys or
+" commands. You can map keys to execute frequently used key sequences or to
+" invoke an Ex command or to invoke a Vim function or to invoke external
+" commands. Using key maps you can define your own Vim commands.
+"
+" Vim supports several editing modes:
+"  - normal
+"  - insert
+"  - replace
+"  - visual
+"  - select
+"
+" command-line and operator-pending. You can map a key to work in all or some
+" of these modes.
+
+
+
 let mapleader = ','
 noremap j gj
 noremap k gk
@@ -28,6 +45,11 @@ if !exists('g:ITM_VIM_no_fastTabs')
   map <S-H> gT
   map <S-L> gt
 endif
+
+" General{
+
+
+" }
 
 " Stupid shift key fixes
   if has("user_commands")
