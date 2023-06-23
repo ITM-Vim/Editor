@@ -165,7 +165,8 @@
 " Formatting {
     "set nowrap                      " Do not wrap long lines
     set wrap
-    set wrapmargin=80
+    set textwidth=79
+    set wrapmargin=79
     set autoindent                  " Indent at the same level of the previous line
     set shiftwidth=4                " Use indents of 4 spaces
     set expandtab                   " Tabs are spaces, not tabs

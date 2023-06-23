@@ -36,7 +36,7 @@
             Plug 'rhysd/conflict-marker.vim'
             Plug 'jiangmiao/auto-pairs'
             Plug 'alvan/vim-closetag'
-            Plug 'ackyshake/VimCompletesMe'
+            Plug 'ward/VimCompletesMe'
 
             "Plug 'nvim-lua/plenary.nvim'
             Plug 'folke/todo-comments.nvim'
