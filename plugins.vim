@@ -132,7 +132,8 @@
                 source ~/.vim/plugin/vim-snippets/snippets/support_functions.vim
             endif
         elseif count(g:ITM_VIM_plugin_groups, 'youcompleteme')
-            Plug 'Valloric/YouCompleteMe'
+            "Plug 'Valloric/YouCompleteMe'
+            Plug 'ycm-core/YouCompleteMe'
             Plug 'SirVer/ultisnips'
         elseif count(g:ITM_VIM_plugin_groups, 'neocomplcache')
             "Plug 'Shougo/neocomplcache'
